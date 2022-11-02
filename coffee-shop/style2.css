@@ -1,0 +1,566 @@
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  background: #513f37;
+
+  outline: none;
+  opacity: 1;
+
+  /* -webkit-transition: 0.2s; */
+  /* transition:opacity 0.2s; */
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 60px;
+  border: 0;
+  background: url('./images/f@2x1.png');
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: url('./images/f@2x1.png');
+  cursor: pointer;
+}
+.nowrp {
+  flex-wrap: nowrap;
+}
+.line-div {
+  display: flex;
+  justify-content: space-between;
+}
+.lft-line {
+  border-left: 2px solid black;
+  height: 2rem;
+  display: inline-block;
+  width: 0;
+}
+.rgt-line {
+  border-right: 2px solid black;
+  height: 2rem;
+}
+.center-line {
+  border-right: 2px solid black;
+  height: 2rem;
+}
+.line-div {
+  margin: 5rem 1rem 1rem 0;
+}
+.lft-line > * {
+  padding: 0;
+  position: relative;
+  top: -100px;
+  left: -16px;
+}
+.rgt-line > * {
+  padding: 0;
+  position: relative;
+  top: -100px;
+  right: -20px;
+}
+.center-line > * {
+  padding: 0;
+  position: relative;
+  top: -100px;
+  right: -22px;
+}
+.hh {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+.center h3 {
+  margin-bottom: 0;
+  padding: 0;
+}
+.c-p {
+  margin-top: 1rem;
+}
+.navbar-btn {
+  background-color: inherit;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+}
+@media (max-width: 768px) {
+  /* .nav {
+    display: none;
+  } */
+  .navbar1 .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3rem;
+    background-color: #3a3531;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .navbar1 .nav > * {
+    padding: 1rem;
+  }
+  footer .nav {
+    flex-direction: row;
+  }
+  .navbar-btn {
+    display: block;
+  }
+}
+
+@media all and (max-width: 670px) and (min-width: 570px) {
+  .card h3 {
+    font-size: 1.5rem;
+  }
+  .login-btn {
+    border: 0;
+    padding: 10px 0;
+    border-radius: 0;
+  }
+  .pad {
+    padding: 0 0.5rem;
+  }
+  .card {
+    width: 35%;
+  }
+  .col-1 {
+    width: 50%;
+  }
+  #experience-sec button {
+    margin: 1rem 2rem 2rem 2rem;
+    width: 230px;
+  }
+  #experience-sec h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  #experience-sec {
+    padding: 1rem 0;
+    height: 100%;
+  }
+  .main-exp {
+    padding: 0;
+  }
+}
+@media all and (max-width: 570px) and (min-width: 426px) {
+  .card {
+    width: 100%;
+  }
+  .row2 {
+    flex-wrap: nowrap;
+  }
+  .col-1 {
+    width: 50%;
+  }
+  #experience-sec button {
+    margin: 1rem 2rem 2rem 2rem;
+    width: 230px;
+  }
+  #experience-sec h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  #experience-sec {
+    padding: 1rem 0;
+    height: 100%;
+  }
+  .main-exp {
+    padding: 0;
+  }
+}
+@media (max-width: 426px) {
+  #header {
+    height: 100vh;
+  }
+  .login-btn {
+    border: 0;
+    padding: 10px 0;
+    border-radius: 0;
+  }
+  .nav {
+    left: 0;
+  }
+  .heading-sectoin {
+    text-align: left;
+  }
+  .btn-discover {
+    margin: 3rem auto;
+  }
+  .row2 {
+    flex-wrap: nowrap !important;
+    /* flex-direction: column; */
+  }
+  body {
+    width: 100%;
+  }
+  .slider {
+    display: none;
+  }
+  .row {
+    flex-wrap: wrap;
+    padding: 0 0.5rem;
+    /* justify-content: center; */
+  }
+  #navbar {
+    padding: 13px 2rem;
+  }
+  .card {
+    width: 90%;
+  }
+  .btn-checkout {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    line-height: 41px;
+  }
+  #experience-sec {
+    padding: 1rem 0;
+    height: 100%;
+  }
+  .main-exp {
+    padding: 0;
+  }
+  #experience-sec button {
+    margin: 1rem 2rem 2rem 2rem;
+    width: 230px;
+  }
+  #experience-sec h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  .spec-city-btn,
+  .any-city-btn {
+    margin-bottom: 0 !important;
+    width: 386px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .col-1 {
+    width: 50%;
+  }
+  .lbl {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .checkbox-column {
+    width: 50%;
+  }
+  #method-section {
+    padding: 0;
+    margin: 1rem;
+  }
+  .big-heading {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .h-detail {
+    max-width: 95%;
+    font-size: 0.9rem;
+    font-weight: 100;
+    /* text-align: left; */
+  }
+  #method-section h2 {
+    font-size: 3rem;
+  }
+}
+
+/* NEW */
+
+@media all and (max-width: 768px) and (min-width: 426px) {
+  .big-heading {
+    font-size: 3rem;
+    width: 80%;
+  }
+  .h-detail {
+    max-width: 65%;
+    font-size: 1rem;
+  }
+  .nav {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    right: 0;
+  }
+  .nav button {
+    width: 5rem;
+    border: 0;
+  }
+  .login-btn {
+    border: 0;
+    padding: 10px 0;
+    border-radius: 0;
+  }
+  .checkbox-column {
+    width: 45%;
+  }
+  .card {
+    width: 38%;
+  }
+  .btn-checkout {
+    font-size: 2rem;
+    padding: 0.1rem 3rem;
+  }
+  .pad {
+    padding: 0 2rem;
+  }
+  .col-1 {
+    width: 50%;
+  }
+  #experience-sec button {
+    margin: 1rem 2rem 2rem 2rem;
+    width: 230px;
+  }
+  #experience-sec h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  #experience-sec {
+    padding: 1rem 0;
+    min-height: 90vh;
+  }
+  .main-exp {
+    padding: 0;
+  }
+  .line-div {
+    margin-right: 0 !important;
+  }
+
+  .center {
+    width: 80%;
+  }
+
+}
+@media (max-width: 425px) {
+  body {
+    width: 100%;
+  }
+  .hh {
+    font-size: 15px;
+  }
+  .pp {
+    font-size: 10px;
+    display: inline-block !important;
+    padding: 0;
+    width: 60%;
+  }
+  .line-div {
+    margin-right: 0 !important;
+    justify-content: space-around;
+    /* width: 100%; */
+  }
+  .center-line {
+    width: 7rem;
+    left: -2.4rem;
+  }
+  .center-line > * {
+    left: 2.5rem;
+  }
+  .rgt-line {
+    width: 9rem;
+  }
+  .lft-line > * {
+    left: -45px;
+  }
+  .btn-result {
+    font-size: 20px;
+  }
+  .center {
+    width: 80%;
+  }
+  #experience-sec {
+    max-width: 100%;
+  }
+  .main-exp {
+    max-width: 75%;
+  }
+}
+
+/* today */
+
+@media (max-width: 426px) {
+  body {
+    width: 100%;
+  }
+  #navbar {
+    padding: 0;
+  }
+  .icon-down a {
+    top: 100%;
+    font-size: 15px;
+  }
+  #header {
+    height: 100vh;
+  }
+  .h-detail {
+    font-size: 15px;
+    max-width: 75%;
+  }
+  .btn-discover {
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+  }
+
+  .hh {
+    font-size: 15px;
+  }
+  .pp {
+    font-size: 10px;
+    display: inline-block !important;
+    padding: 0;
+    width: 60%;
+  }
+  .line-div {
+    margin-right: 0 !important;
+    justify-content: space-around;
+    /* width: 100%; */
+  }
+  .center-line {
+    width: 7rem;
+    left: -3rem;
+  }
+  .center-line > * {
+    left: 1rem;
+  }
+  .rgt-line {
+    width: 9rem;
+  }
+  .lft-line > * {
+    width: 3rem;
+    left: -10px;
+  }
+  .rgt-line > * {
+    width: 5rem;
+  }
+  .btn-result {
+    font-size: 20px;
+  }
+  .center {
+    width: 100%;
+  }
+  /* method */
+  #method-section {
+    margin: 4rem 1rem;
+  }
+  .checkbox-column {
+    width: 50%;
+  }
+  .method-h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .method-p {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  .method-label {
+    font-size: 15px;
+  }
+  .chckbox {
+    height: 30px;
+    width: 30px;
+    line-height: 15px;
+    padding-bottom: 0;
+  }
+  /* #experience-sec{
+  max-width: 100%;
+} */
+  #experience-sec button {
+    width: 150px;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  #experience-sec .row {
+    padding: 0;
+  }
+  .main-exp {
+    width: 100%;
+  }
+  .col-1 {
+    width: 45%;
+  }
+  .lbl {
+    font-size: 13px;
+    margin-left: 0.3rem;
+  }
+  .echeck {
+    height: 20px;
+    width: 20px;
+  }
+  .big-heading {
+    font-size: 2rem;
+  }
+  #header {
+    max-width: 100%;
+  }
+  .main-exp {
+    max-width: 75%;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-h3 {
+    font-size: 25px;
+  }
+  .card-adress {
+    font-size: 18px;
+  }
+  .card-price {
+    font-size: 18px;
+  }
+  .card-btn {
+    font-size: 16px;
+  }
+  .card-description {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .row {
+    padding: 1rem;
+  }
+  .btn-checkout {
+    font-size: 1rem;
+    padding: 0 3rem;
+  }
+  #discover-sec {
+    padding: 0rem;
+  }
+  .center h3 {
+    font-size: 1.2rem;
+  }
+  .main-exp {
+    padding: 0;
+  }
+  .exp-p {
+    font-size: 12px;
+  }
+  .icon-down2 {
+    font-size: 10px;
+  }
+  #experience-sec {
+    height: 100%;
+    padding-bottom: 1rem;
+  }
+  .exp-h1 {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}

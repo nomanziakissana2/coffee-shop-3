@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d759afb79e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="response.css" />
+    <link rel="stylesheet" href="responsiveForCard.css" />
+    <!-- <link rel="stylesheet" href="style2.css" /> -->
+    <link rel="icon" href="./images/coffee-icon.jpg" />
+    <title>Coffe</title>
+  </head>
+  <body>
+    <div class="addtocart" id="addtocart">
+      <div class="iner-div">
+        <button class="btn-close" onclick="hide()">X</button>
+        <h2 class="iner-card-h1">Successfully Added To Cart</h2>
+        <div class="inner-card">
+          <div class="card-header row row2">
+            <div class="inner-card-h-lft">
+              <h3>BOB'S BREW</h3>
+              <p>San Digeo, Ca</p>
+              <p>$10.00</p>
+            </div>
+            <div class="inner-card-h-right">
+              <button class="inner-card-btn">
+                <i class="fa-solid fa-3x fa-circle-plus"></i>
+              </button>
+              <p style="text-align: center">Add</p>
+            </div>
+          </div>
+          <div class="inner-card-image">
+            <img src="./images/hh-2.png" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="inner-card-description">Description</p>
+            <p class="inner-card-detail">
+              Flavor, experience provided, plant, grow location, about company.
+            </p>
+          </div>
+        </div>
+        <div class="card-btn-div">
+          <button class="btn btn-shopping" onclick="hide()">
+            Continue Shopping
+          </button>
+          <button class="btn btn-dark">Checkout Now</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="navbar" class="navbar1">
+      <nav class="navbar row" id="topnavbar">
+        <div class="brand">
+          <a href="#"><span>I</span> LocalBrew</a>
+        </div>
+        <div class="nav" id="nav">
+          <a href="#"><i class="fa fa-search"></i></a>
+          <a href="#">My Cart</a>
+          <a class="login-btn" type="button" href="#">Log in/Sign Up</a>
+        </div>
+        <button class="navbar-btn" id="navbar-btn" onclick="navabrBtnShow()">
+          <i class="fa fa-bars fa-2x"></i>
+        </button>
+      </nav>
+    </section>
+    <section id="header">
+      <div class="heading-sectoin">
+        <h1 class="big-heading">The Coffe concierge you've been seeking.</h1>
+        <p class="h-detail">
+          We carefully select and feature the best quality local coffee from
+          cities Nationwide. Let your taste buds travel.
+        </p>
+        <button class="btn btn-discover">Discover Coffee</button>
+      </div>
+      <div class="icon-down">
+        <a href="#method-section" class="fa-solid fa-angle-down fa-2x"></a>
+      </div>
+    </section>
+    <section id="method-section">
+      <h1 class="method-h1">How are you Brewing?</h1>
+      <p class="method-p">Select your methods of making coffee.</p>
+      <div class="icon-down2">
+        <a
+          href="#discover-sec"
+          style="color: #000"
+          class="fa-solid fa-angle-down fa-2x"
+        ></a>
+      </div>
+
+      <div class="">
+        <form action="" class="row check-padding">
+          <div class="checkbox-column">
+            <label class="method-label" for="cMaker">Coffee Maker</label>
+            <div id="">
+              <input id="check" class="chckbox" type="radio" name="cMaker" />
+            </div>
+          </div>
+          <div class="checkbox-column">
+            <label class="method-label" for="cBrew">Cold Brew</label>
+            <input class="chckbox" type="radio" name="cBrew" />
+          </div>
+          <div class="checkbox-column">
+            <label class="method-label" for="rPods">Refillable Pods</label>
+            <input class="chckbox" type="radio" name="rPods" />
+          </div>
+          <div class="checkbox-column">
+            <label class="method-label" for="fPress">French Press</label>
+            <input class="chckbox" type="radio" name="fPress" />
+          </div>
+          <div class="checkbox-column">
+            <label class="method-label" for="pOver">Pour Over</label>
+            <input class="chckbox" type="radio" name="pOver" />
+          </div>
+          <div class="checkbox-column">
+            <label class="method-label" for="percolator">Percolator</label>
+            <input class="chckbox" type="radio" name="percolator" />
+          </div>
+          <div class="checkbox-column">
+            <label class="method-label" for="chemax">Chemax</label>
+            <input class="chckbox" type="radio" name="chemax" />
+          </div>
+          <div class="checkbox-column">
+            <label class="method-label" for="mokapot">Moka Pot</label>
+            <input class="chckbox" type="radio" name="pokapot" />
+          </div>
+          <div class="checkbox-column">
+            <label class="method-label" for="eMachine">Espreso Machine</label>
+            <input class="chckbox" type="radio" name="eMachine" />
+          </div>
+          <div class="checkbox-column">
+            <label class="method-label" for="aPress">AeroPress</label>
+            <input class="chckbox" type="radio" name="aPress" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="experience-sec">
+      <div class="main-exp">
+        <div>
+          <h1 class="exp-h1">Is there a city you'd like to experience?</h1>
+          <p class="exp-p">Optional</p>
+          <div class="icon-down2">
+            <a
+              style="color: #fff"
+              class="fa-solid fa-angle-down fa-2x"
+              onclick="showangel()"
+            ></a>
+          </div>
+          <button class="spec-city-btn btn">Specific City</button>
+          <button class="any-city-btn btn">Any City</button>
+        </div>
+
+        <form action="" class="row exp-row" id="exp-row">
+          <div class="col-1">
+            <div class="txt">
+              <input type="radio" name="Cocoa" id="Cocoa" class="echeck" />
+              <label for="Cocoa" class="lbl">Cocoa Bech, FL</label>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="txt">
+              <input type="radio" name="Miami" id="Miami" class="echeck" />
+              <label for="Miami" class="lbl">Miami, FL</label>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="txt">
+              <input type="radio" name="Sansf" id="Sansf" class="echeck" />
+              <label for="Sansf" class="lbl">San Francisco, CA</label>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="txt">
+              <input type="radio" name="Daytona" id="Daytona" class="echeck" />
+              <label for="Daytona" class="lbl">Daytona Beach, FL</label>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="txt">
+              <input type="radio" name="Orlando" id="Orlando" class="echeck" />
+              <label for="Orlando" class="lbl">Orlando, FL</label>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="txt">
+              <input type="radio" name="Santa" id="Santa" class="echeck" />
+              <label for="Santa" class="lbl">Santa Monica, CA</label>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="txt">
+              <input type="radio" name="Marina" id="Marina" class="echeck" />
+              <label for="Marina" class="lbl">Marina del Ray, CA</label>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="txt">
+              <input
+                type="radio"
+                name="SanDiego"
+                id="SanDiego"
+                class="echeck"
+              />
+              <label for="SanDiego" class="lbl">San Diego, CA</label>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="txt">
+              <input type="radio" name="Venice" id="Venice" class="echeck" />
+              <label for="Venice" class="lbl">Venice Beach, CA</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="row">
+      <form action=""></form>
+    </div>
+    <section id="discover-sec" class="discover-sec">
+      <div class="row nowrp">
+        <div class="">
+          <img src="./images/left.png" alt="lft-img" />
+        </div>
+        <div class="center">
+          <h3>Discover You New Go-To Coffee.</h3>
+          <p class="c-p">
+            Slide <strong>bean</strong> to desired roast strength
+          </p>
+          <div class="line-div">
+            <div class="lft-line">
+              <div>
+                <h2 class="hh">Low</h2>
+                <p class="pp">Decaf</p>
+              </div>
+            </div>
+            <div class="center-line">
+              <div>
+                <h2 class="hh">Medium</h2>
+                <p class="pp">Moderate Strength</p>
+              </div>
+            </div>
+            <div class="rgt-line">
+              <div>
+                <h2 class="hh">High</h2>
+                <p class="pp">Top Strength</p>
+              </div>
+            </div>
+          </div>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            id="myRange"
+            oninput="sliderChange(this.value)"
+          />
+          <button class="btn btn-result">Result</button>
+          <!-- <p id="demo">50</p> -->
+        </div>
+        <div class="">
+          <img src="./images/AdobeStock_101596536 2.png" alt="rft-img" />
+        </div>
+      </div>
+    </section>
+    <section id="card-sec">
+      <div class="row pad">
+        <div class="card">
+          <div class="card-header row row2">
+            <div class="card-h-lft">
+              <h3 class="card-h3">BOB'S BREW</h3>
+              <p class="card-adress">San Digeo, Ca</p>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-h-right">
+              <button class="card-btn" onclick="show()">
+                <i class="fa-solid fa-3x fa-circle-plus"></i>
+              </button>
+              <p class="card-add">Add</p>
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="./images/hh-2.png" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="card-description">Description</p>
+            <p class="card-detail">
+              Flavor, experience provided, plant, grow location, about company.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header row row2">
+            <div class="card-h-lft">
+              <h3 class="card-h3">BOB'S BREW</h3>
+              <p class="card-adress">San Digeo, Ca</p>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-h-right">
+              <button class="card-btn" onclick="show()">
+                <i class="fa-solid fa-3x fa-circle-plus"></i>
+              </button>
+              <p class="card-add">Add</p>
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="./images/hh-2.png" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="card-description">Description</p>
+            <p class="card-detail">
+              Flavor, experience provided, plant, grow location, about company.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header row row2">
+            <div class="card-h-lft">
+              <h3 class="card-h3">BOB'S BREW</h3>
+              <p class="card-adress">San Digeo, Ca</p>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-h-right">
+              <button class="card-btn" onclick="show()">
+                <i class="fa-solid fa-3x fa-circle-plus"></i>
+              </button>
+              <p class="card-add">Add</p>
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="./images/hh-2.png" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="card-description">Description</p>
+            <p class="card-detail">
+              Flavor, experience provided, plant, grow location, about company.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header row row2">
+            <div class="card-h-lft">
+              <h3 class="card-h3">BOB'S BREW</h3>
+              <p class="card-adress">San Digeo, Ca</p>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-h-right">
+              <button class="card-btn" onclick="show()">
+                <i class="fa-solid fa-3x fa-circle-plus"></i>
+              </button>
+              <p class="card-add">Add</p>
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="./images/hh-2.png" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="card-description">Description</p>
+            <p class="card-detail">
+              Flavor, experience provided, plant, grow location, about company.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header row row2">
+            <div class="card-h-lft">
+              <h3 class="card-h3">BOB'S BREW</h3>
+              <p class="card-adress">San Digeo, Ca</p>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-h-right">
+              <button class="card-btn" onclick="show()">
+                <i class="fa-solid fa-3x fa-circle-plus"></i>
+              </button>
+              <p class="card-add">Add</p>
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="./images/hh-2.png" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="card-description">Description</p>
+            <p class="card-detail">
+              Flavor, experience provided, plant, grow location, about company.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header row row2">
+            <div class="card-h-lft">
+              <h3 class="card-h3">BOB'S BREW</h3>
+              <p class="card-adress">San Digeo, Ca</p>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-h-right">
+              <button class="card-btn" onclick="show()">
+                <i class="fa-solid fa-3x fa-circle-plus"></i>
+              </button>
+              <p class="card-add">Add</p>
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="./images/hh-2.png" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="card-description">Description</p>
+            <p class="card-detail">
+              Flavor, experience provided, plant, grow location, about company.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header row row2">
+            <div class="card-h-lft">
+              <h3 class="card-h3">BOB'S BREW</h3>
+              <p class="card-adress">San Digeo, Ca</p>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-h-right">
+              <button class="card-btn" onclick="show()">
+                <i class="fa-solid fa-3x fa-circle-plus"></i>
+              </button>
+              <p class="card-add">Add</p>
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="./images/hh-2.png" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="card-description">Description</p>
+            <p class="card-detail">
+              Flavor, experience provided, plant, grow location, about company.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header row row2">
+            <div class="card-h-lft">
+              <h3 class="card-h3">BOB'S BREW</h3>
+              <p class="card-adress">San Digeo, Ca</p>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-h-right">
+              <button class="card-btn" onclick="show()">
+                <i class="fa-solid fa-3x fa-circle-plus"></i>
+              </button>
+              <p class="card-add">Add</p>
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="./images/hh-2.png" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="card-description">Description</p>
+            <p class="card-detail">
+              Flavor, experience provided, plant, grow location, about company.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header row row2">
+            <div class="card-h-lft">
+              <h3 class="card-h3">BOB'S BREW</h3>
+              <p class="card-adress">San Digeo, Ca</p>
+              <p class="card-price">$10.00</p>
+            </div>
+            <div class="card-h-right">
+              <button class="card-btn" onclick="show()">
+                <i class="fa-solid fa-3x fa-circle-plus"></i>
+              </button>
+              <p class="card-add">Add</p>
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="./images/hh-2.png" alt="card-img" />
+          </div>
+          <div class="card-body">
+            <p class="card-description">Description</p>
+            <p class="card-detail">
+              Flavor, experience provided, plant, grow location, about company.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bottom-sec">
+      <button class="btn-checkout btn">Checkout</button>
+    </section>
+    <footer>
+      <section id="navbar">
+        <nav class="row">
+          <div class="brand">
+            <a href="#"><span>I</span> LocalBrew</a>
+          </div>
+          <div class="f-nav">
+            <a href="#">Contact Us</a>
+            <a href="#">About</a>
+            <a class="login-btn" type="button" href="#">Get Started</a>
+          </div>
+        </nav>
+      </section>
+    </footer>
+    <script src="addFun.js"></script>
+  </body>
+</html>

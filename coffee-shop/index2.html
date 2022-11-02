@@ -1,0 +1,168 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style4.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="discover-sec" class="discover-sec">
+      <div class="row nowrp">
+        <div class="">
+          <img src="./images/left.png" alt="lft-img" />
+        </div>
+        <div class="center">
+          <h3>Discover You New Go-To Coffee.</h3>
+          <p class="c-p">
+            Slide <strong>bean</strong> to desired roast strength
+          </p>
+          <div class="line-div">
+            <div class="lft-line">
+              <div>
+                <h2 class="hh">Low</h2>
+                <p class="pp">Decaf</p>
+              </div>
+            </div>
+            <div class="center-line">
+              <div>
+                <h2 class="hh">Medium</h2>
+                <p class="pp">Moderate Strength</p>
+              </div>
+            </div>
+            <div class="rgt-line">
+              <div>
+                <h2 class="hh">High</h2>
+                <p class="pp">Top Strength</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider" id="cc" onclick="showCoords(event)">
+            <div class="img" id="thing"></div>
+          </div>
+          <button class="btn btn-result">Result</button>
+          <p id="demo">50</p> -->
+<!-- </div>
+        <div class="">
+          <img src="./images/AdobeStock_101596536 2.png" alt="rft-img" />
+        </div>
+      </div>
+    </section>
+    <script>
+      var thething = document.getElementById('thing');
+      var c = document.getElementById('cc');
+
+      function showCoords(event) {
+        var x = event.clientX;
+        var y = 10;
+        var coords = 'X coords: ' + x + ', Y coords: ' + y;
+        var translate3D = 'translate3D(' + x + 'px,' + y + 'px, 0)';
+        thething.style.left = '0px';
+        thething.style.left = x + 'px';
+      }
+    </script>
+  </body>
+</html>  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #cc {
+        width: 90%;
+        height: 10px;
+        border: 15px solid #ededed;
+        overflow: hidden;
+        background-color: red;
+        cursor: pointer;
+      }
+      #thing {
+        position: absolute;
+        top: 0px;
+        width: 15px;
+        height: 40px;
+        background-color: rgb(255, 207, 0);
+        top: 2%;
+        left: 50%;
+        /* border-radius: 50%; */
+        /* transform: translate3d(50%, 10px, 0); */
+      }
+    </style>
+  </head>
+  <body>
+    <section id="discover-sec" class="discover-sec">
+      <div class="row nowrp">
+        <div class="">
+          <img src="./images/left.png" alt="lft-img" />
+        </div>
+        <div class="center">
+          <h3>Discover You New Go-To Coffee.</h3>
+          <p class="c-p">
+            Slide <strong>bean</strong> to desired roast strength
+          </p>
+          <div class="line-div">
+            <div class="lft-line">
+              <div>
+                <h2 class="hh">Low</h2>
+                <p class="pp">Decaf</p>
+              </div>
+            </div>
+            <div class="center-line">
+              <div>
+                <h2 class="hh">Medium</h2>
+                <p class="pp">Moderate Strength</p>
+              </div>
+            </div>
+            <div class="rgt-line">
+              <div>
+                <h2 class="hh">High</h2>
+                <p class="pp">Top Strength</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="cc" onclick="showCoords(event)">
+            <div class="img" id="thing"></div>
+          </div>
+          <button class="btn btn-result">Result</button>
+          <p id="demo">50</p>
+          -->
+        </div>
+        <div class="">
+          <img src="./images/AdobeStock_101596536 2.png" alt="rft-img" />
+        </div>
+      </div>
+    </section>
+    <div id="cc" onclick="showCoords(event)" ondragstart="showCoords(event)">
+      <div id="thing"></div>
+    </div>
+    <script>
+      var thething = document.getElementById('thing');
+      var c = document.getElementById('cc');
+
+      function showCoords(event) {
+        var x = event.clientX;
+        var y = 10;
+        var coords = 'X coords: ' + x + ', Y coords: ' + y;
+        var translate3D = 'translate3D(' + x + 'px,' + y + 'px, 0)';
+        thething.style.left = '0';
+        thething.style.top = '0px';
+        thething.style.transform = translate3D;
+      }
+      //   var thething = document.getElementById('thing');
+      //   var c = document.getElementById('cc');
+      //   //   c.addEventListener('click', getclick(e), false);
+      //   function getclick(e) {
+      //     var xP = e.clientX;
+      //     var yP = e.clientY;
+      //     var translate3D = 'translare3D(' + xP + 'px,' + yP + 'px, 0)';
+      //     thething.style.transform = translate3D;
+      //   }
+    </script>
+  </body>
+</html>

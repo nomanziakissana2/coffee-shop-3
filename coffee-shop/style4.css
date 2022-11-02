@@ -1,0 +1,141 @@
+#discover-sec img {
+  height: 500px;
+  width: 200px;
+}
+#discover-sec {
+  text-align: center;
+}
+.center h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 81px;
+  margin-bottom: 3rem;
+}
+.img {
+  position: absolute;
+  background-image: url('./images/f@2x1.png');
+  width: 40px;
+  top: -25px;
+  left: 0;
+  height: 58px;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  background: url('f@2x.png');
+  height: 4px;
+  margin-bottom: 4rem;
+}
+.slider {
+  position: relative;
+  appearance: none;
+  width: 90%;
+  height: 6px;
+  border-radius: 5px;
+  background: #513f37;
+
+  outline: none;
+  opacity: 1;
+
+  /* -webkit-transition: 0.2s; */
+  /* transition:opacity 0.2s; */
+}
+
+.slider:hover {
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 60px;
+  width: 33px;
+  border: 0;
+  background: url('./images/f@2x1.png');
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: url('./images/f@2x1.png');
+  cursor: pointer;
+}
+.nowrp {
+  flex-wrap: nowrap;
+}
+.line-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.lft-line {
+  border-left: 2px solid black;
+  height: 2rem;
+  width: 10rem;
+  /* display: inline-block; */
+}
+.rgt-line {
+  border-right: 2px solid black;
+  height: 2rem;
+  margin-right: 0;
+  width: 10rem;
+}
+.center-line {
+  border-right: 2px solid black;
+  height: 2rem;
+  width: 10rem;
+  position: relative;
+  left: -4.8rem;
+}
+.line-div {
+  margin: 5rem 1rem 1rem 0;
+}
+.lft-line > * {
+  padding: 0;
+  position: relative;
+  top: -100px;
+  left: -55px;
+}
+.rgt-line > * {
+  padding: 0;
+  position: relative;
+  top: -100px;
+  right: -40px;
+}
+.center-line > * {
+  padding: 0;
+  position: relative;
+
+  top: -100px;
+  right: -5rem;
+}
+.hh {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 25px;
+  font-style: normal;
+  margin-bottom: 0;
+  padding: 0;
+}
+.pp {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  width: 10rem;
+}
+.center h3 {
+  margin-bottom: 0;
+  padding: 0;
+}
+.c-p {
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+}
